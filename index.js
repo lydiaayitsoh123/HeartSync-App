@@ -41,7 +41,7 @@ function displayNewUser(user) {
 
     const memberCard = document.createElement("div");
     memberCard.classList.add("member-card");
-    memberCard.setAttribute("data-id", user.id); // Store user ID for deletion
+    memberCard.setAttribute("data-id", user.id); 
 
     memberCard.innerHTML = `
         <img src="${user.image}" class="profile-pic" alt="${user.name}">
@@ -51,7 +51,7 @@ function displayNewUser(user) {
         <button class="delete-btn">🗑️ Delete</button>
     `;
 
-    // Attach delete event listener
+    
     memberCard.querySelector(".delete-btn").addEventListener("click", () => deleteUser(user.id, memberCard));
 
     membersList.appendChild(memberCard);
@@ -98,7 +98,7 @@ function deleteUser(userId, memberCard) {
     .then(response => {
         if (response.ok) {
             alert("User deleted successfully.");
-            memberCard.remove(); // Remove member card from DOM
+            memberCard.remove(); 
         } else {
             alert("Failed to delete user.");
         }
