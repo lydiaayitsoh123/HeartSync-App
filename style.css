@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Rubik:wght@300..900&display=swap');
+
+:root {
+    --primary-color: #FF6F61;
+    --secondary-color: #FFE5D9;
+    --text-color: #333;
+    --background-color: whitesmoke;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    background-image: url("https://img.freepik.com/free-photo/red-heart_93675-131022.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.nav {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e65a50;
+}
+
+/* MEMBERS LIST */
+#members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* MEMBER CARD */
+.member-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.member-info {
+    margin-top: 10px;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.member-age {
+    font-size: 14px;
+    color: grey;
+}
+
+.view-profile-btn {
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-profile-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* PROFILE MODAL */
+.profile-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+.profile-modal img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.close-modal {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: #e65a50;
+}

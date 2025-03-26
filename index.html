@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartsync - Find Your Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo-container">
+            <h2>Heartsync Dating Site.</h2>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- User Registration Form -->
+        <section id="registration-section">
+            <h3>Join Heartsync</h3>
+            <form id="registration-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <textarea id="bio" placeholder="Short Bio" required></textarea>
+                <input type="url" id="image" placeholder="Profile Picture URL" required>
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+
+        <!-- Members List -->
+        <section id="members-list"></section>
+
+        <!-- Profile Section -->
+        <section id="profile-section">
+            <h3>Profile</h3>
+            <div id="profile-details"></div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
