@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* NAVBAR */
+
 .nav {
     height: 8vh;
     display: flex;
@@ -38,7 +38,7 @@ body {
     width: 120px;
 }
 
-/* BUTTONS */
+
 .btn {
     padding: 12px 24px;
     background-color: var(--primary-color);
@@ -55,7 +55,7 @@ body {
     background-color: #e65a50;
 }
 
-/* MEMBERS LIST */
+
 #members-list {
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,7 @@ body {
     padding: 20px;
 }
 
-/* MEMBER CARD */
+
 .member-card {
     background: white;
     padding: 15px;
@@ -118,7 +118,7 @@ body {
     color: white;
 }
 
-/* PROFILE MODAL */
+
 .profile-modal {
     display: none;
     position: fixed;
