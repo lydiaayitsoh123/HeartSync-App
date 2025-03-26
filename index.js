@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(response => response.json())
         .then(data => {
-            alert("Welcome to Heartsyc!");
+            alert("Welcome to Heartsync!");
             displayNewUser(data);
         })
         .catch(error => console.error("Error:", error));
