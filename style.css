@@ -97,10 +97,7 @@ body {
     color: var(--text-color);
 }
 
-.member-age {
-    font-size: 14px;
-    color: grey;
-}
+
 
 .view-profile-btn {
     margin-top: 10px;
@@ -113,10 +110,6 @@ body {
     transition: 0.3s;
 }
 
-.view-profile-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
 
 
 #profile-section {
@@ -133,7 +126,7 @@ body {
     text-align: center;
 }
 
-.profile-section img {
+#profile-section img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -152,5 +145,5 @@ body {
 }
 
  #profile-section button:hover {
-    background-color: #e65a50;
+    background-color: #421c19;
 }
